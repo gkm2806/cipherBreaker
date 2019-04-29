@@ -1,20 +1,20 @@
 export const questoes = [
     {
-        tipo : "cesar | +/- 7",
-        cripta : "puzapabavmlklyhs",
-        resposta : "institutofederal",
+        tipo : "substituição",
+        cripta : "roma",
+        resposta : "amor",
         debuffMultplier : "0.8"
     },
     {
-        tipo : "cesar | +/- 5",
-        cripta : "nzbpmvixvyvdiajmhvxvj",
-        resposta : "segurancadainformacao",
+        tipo : "cesar | +/- 2",
+        cripta : "etcejc",
+        resposta : "cracha",
         debuffMultplier : "0.7"
     },
     {
-        tipo : "cesar | +/- 2",
-        cripta : "pcnszjgaydcbcpyrgtybmzpyqgj",
-        resposta : "republicafederativadobrasil",
+        tipo : "cesar | +/- 4",
+        cripta : "okyeazwza",
+        resposta : "sociedade",
         debuffMultplier : "0.7"
     },
     {
@@ -31,10 +31,11 @@ export const questoes = [
     },
     {
         tipo : "cesar | +/- 4",
-        cripta : "apeywaokyeazwza",
-        resposta : "eticaesociedade",
+        cripta : "apeyw",
+        resposta : "etica",
         debuffMultplier : "0.7"
-    },  {
+    },  
+    {
         tipo : "cesar | +/- 7",
         cripta : "puzapabavmlklyhs",
         resposta : "institutofederal",
@@ -47,9 +48,9 @@ export const questoes = [
         debuffMultplier : "0.7"
     },
     {
-        tipo : "cesar | +/- 2",
-        cripta : "pcnszjgaydcbcpyrgtybmzpyqgj",
-        resposta : "republicafederativadobrasil",
+        tipo : "cesar | +/- 3",
+        cripta : "fhoxodu",
+        resposta : "celular",
         debuffMultplier : "0.7"
     },
     {
