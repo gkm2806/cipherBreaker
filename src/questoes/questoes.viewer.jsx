@@ -69,9 +69,14 @@ class SimpleDialogDemo extends React.Component {
     input: ""
   };
   componentWillReceiveProps() {
-    watcher(this.props.clicks) && this.handleClickOpen() && this.addClick()
-      
+    watcher(this.props.clicks) && this.callOpenner()
   }
+
+  callOpenner = () => {
+    this.props.addClick()
+    this.handleClickOpen()
+  }
+
   handleClickOpen = () => {
     this.setState({
       open: true,

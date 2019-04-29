@@ -24,9 +24,9 @@ export const questoes = [
         debuffMultplier : "0.7"
     },
     {
-        tipo : "cesar | +/- 3",
-        cripta : "olqjxdjhpghsurjudpdfdr",
-        resposta : "javaehmuitoruim",
+        tipo : "cesar | +/- 2",
+        cripta : "lcxcgjovtwko",
+        resposta : "javaehmtruim",
         debuffMultplier : "0.7"
     },
     {
@@ -55,8 +55,8 @@ export const questoes = [
     },
     {
         tipo : "cesar | +/- 2",
-        cripta : "lcxcgjowkvqtwko",
-        resposta : "javaehmuitoruim",
+        cripta : "lcxcgjovtwko",
+        resposta : "javaehmtruim",
         debuffMultplier : "0.7"
     }
 
