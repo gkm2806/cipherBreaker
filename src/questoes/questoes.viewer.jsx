@@ -86,7 +86,9 @@ class SimpleDialogDemo extends React.Component {
   render() {
     return (
       <div>
-        <Button onClick={this.handleClickOpen}> alo </Button>
+        {
+          //<Button onClick={this.handleClickOpen}> alo </Button>
+        }
         <SimpleDialogWrapped
           nao={this.props.nao}
           ok={this.props.ok}
