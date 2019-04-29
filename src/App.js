@@ -69,7 +69,7 @@ class App extends Component {
       <div className="App">
         <Clicker getClicks={this.getClicks} verPontos={this.verPontos} verdade={this.state.verdade} pegaPontos={this.pegaPontos} pegaCoisas={this.pegaCoisas} mult={this.state.multiplicador} />
         <Upgrades diminuiPontos={this.diminuiPontos} ver={this.ver} verPontos={this.verPontos} pegaMult={this.pegaMult} />
-        <Viewer clicks={this.state.clicks} ok={this.ok} nao={this.nao} />
+        <Viewer addClick={this.getClicks} clicks={this.state.clicks} ok={this.ok} nao={this.nao} />
       </div>
     );
   }
