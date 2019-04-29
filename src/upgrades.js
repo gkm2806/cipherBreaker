@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Fab from '@material-ui/core/Fab';
-import carrinho from './assets/carrinho.png';
+import carrinho from './assets/carrinho.svg';
 import './styles/App.css';
 class Upgrades extends Component {
 

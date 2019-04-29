@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import computador1 from './assets/computador1.png';
-import computador2 from './assets/computador3.png';
-import computador3 from './assets/computador3.png';
+import computador1 from './assets/computador1.svg';
+import computador2 from './assets/computador3.svg';
+import computador3 from './assets/computador3.svg';
 import './styles/App.css';
 class Clicker extends Component {
   constructor(props){
