@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import computador1 from './computador1.png';
-import computador2 from './computador3.png';
-import computador3 from './computador3.png';
-import './App.css';
+import computador1 from './assets/computador1.png';
+import computador2 from './assets/computador3.png';
+import computador3 from './assets/computador3.png';
+import './styles/App.css';
 class Clicker extends Component {
   constructor(props){
     super(props)
     this.state = {
       pontos: 0,
       multiplicador: 0,
-      verdade: 0
+      verdade: 0,
+      clicks: 0
     }
   }
   componentWillReceiveProps(next){
@@ -46,12 +47,15 @@ class Clicker extends Component {
       )
     }, 1000)
   }
-  m = () => {
-    this.setState(
-      {pontos: this.state.pontos + 1},
-      ()=>this.props.pegaPontos(this.state.pontos)
+  clickListener = () => {
+    this.setState({
+      pontos: this.state.pontos + 1,
+      clicks: this.state.clicks + 1
+    },
+      ()=>this.props.pegaCoisas(this.state.pontos, this.state.clicks)
     )
   }
+
   render(){
     let img;
     switch (this.state.verdade) {
@@ -76,7 +80,7 @@ class Clicker extends Component {
         <p className="velocidade">
           Velocidade {this.state.multiplicador}/s
         </p>
-        <div onClick={()=>this.m()}>
+        <div onClick={()=>this.clickListener()}>
           {img}
         </div>
       </div>
