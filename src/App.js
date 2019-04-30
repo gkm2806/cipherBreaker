@@ -3,6 +3,7 @@ import Upgrades from './upgrades';
 import Clicker from './clicker';
 import './styles/App.css';
 import Viewer from "./questoes/questoes.viewer.jsx"
+import Footer from "./Footer"
 
 class App extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends Component {
       clicks: 0,
     }
   }
-  pegaCoisas = (pontos,clicks) => {
+  pegaCoisas = (pontos, clicks) => {
     this.setState({
       pontos: pontos,
       clicks: clicks
@@ -26,15 +27,15 @@ class App extends Component {
     })
   }
 
-  nao = () =>{
+  nao = () => {
     this.setState({
-      pontos: this.state.pontos/2
+      pontos: this.state.pontos / 2
     })
   }
 
-  ok = () =>{
+  ok = () => {
     this.setState({
-      pontos: this.state.pontos*1.2
+      pontos: this.state.pontos * 1.2
     })
   }
 
@@ -66,10 +67,13 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <div >
+        <div className="App">
         <Clicker getClicks={this.getClicks} verPontos={this.verPontos} verdade={this.state.verdade} pegaPontos={this.pegaPontos} pegaCoisas={this.pegaCoisas} mult={this.state.multiplicador} />
         <Upgrades diminuiPontos={this.diminuiPontos} ver={this.ver} verPontos={this.verPontos} pegaMult={this.pegaMult} />
         <Viewer addClick={this.getClicks} clicks={this.state.clicks} ok={this.ok} nao={this.nao} />
+        </div>
+        <Footer />
       </div>
     );
   }

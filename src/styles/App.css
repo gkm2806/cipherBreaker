@@ -81,6 +81,11 @@
   width: 60%;
 }
 
+a{
+  color: #f50057 !important
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
